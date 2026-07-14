@@ -1,215 +1,324 @@
-# 🌍 A Comprehensive Measure of Well-Being (HDI Prediction)
+# 🌍 A Comprehensive Measure of Well-Being
 
-## 📌 Overview
+> An interactive Human Development Index (HDI) prediction and recommendation platform that evaluates a country's level of development using key socio-economic indicators and provides actionable insights for improvement.
 
-**A Comprehensive Measure of Well-Being** is a Machine Learning-based web application that predicts the **Human Development Index (HDI)** using key socio-economic indicators such as **Life Expectancy, Education Index, Gross National Income (GNI) per Capita,** and **Expected Years of Schooling**.
-
-The project aims to provide a more comprehensive assessment of a country's development beyond GDP by leveraging predictive analytics. A trained regression model powers a Flask-based web application where users can enter development indicators and instantly receive an HDI prediction along with its development category.
-
----
-
-## 🚀 Live Demo
-
-🌐 **Application:** https://project-apsche.onrender.com/
-
-📂 **GitHub Repository:** https://github.com/chilakalapallilohitha23csm-sudo/measure-of-well-being
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 ---
 
-## ✨ Features
+## 📖 Overview
 
-- 🤖 Predicts Human Development Index (HDI) using Machine Learning
-- 📊 Uses socio-economic indicators for accurate estimation
-- 🌐 Clean and responsive web interface built with Flask
-- ⚡ Instant prediction with development category
-- 📈 High model accuracy using a trained regression model
-- ☁️ Deployed on Render for public access
-- 🧪 Tested for reliable and consistent predictions
+**A Comprehensive Measure of Well-Being** is an interactive web application that predicts the **Human Development Index (HDI)** of a country or hypothetical scenario based on three internationally recognized development indicators:
 
----
+- 🌱 Life Expectancy
+- 🎓 Years of Schooling
+- 💰 Gross National Income (GNI) per Capita (PPP)
 
-## 🛠️ Tech Stack
+The application calculates the HDI score in real time and classifies it into one of the official UNDP Human Development categories:
 
-| Category | Technologies |
-|----------|--------------|
-| Programming Language | Python |
-| Machine Learning | Scikit-learn |
-| Data Analysis | Pandas, NumPy |
-| Model Development | Jupyter Notebook |
-| Backend | Flask |
-| Frontend | HTML5, CSS3, JavaScript |
-| Deployment | Render |
-| Version Control | Git & GitHub |
+- 🟢 Very High
+- 🔵 High
+- 🟡 Medium
+- 🔴 Low
+
+Beyond prediction, the platform intelligently recommends the **most impactful indicator** to improve in order to reach the next HDI tier.
 
 ---
 
-## 📊 Machine Learning Workflow
+## 🚀 Live Demo link: https://project-apsche.onrender.com/
 
-- Data Collection
-- Data Preprocessing
-- Feature Engineering
-- Model Training
-- Model Evaluation
-- Model Serialization
-- Flask Integration
-- Cloud Deployment
+**Project Demo**
+
+https://1drv.ms/v/c/877c79faa9c98b23/IQCksyjfIaSPSalNHhIL6RfeAYQmfMo0gksRGSGkP8un7QI?e=KRoYDh
+
+> **Note:** Free hosting services may take **30–50 seconds** to wake up after inactivity.
 
 ---
 
-## 📁 Project Structure
+## 💻 Source Code
+
+GitHub Repository
+
+https://github.com/Haradevsrujan/A-Comprehensive-Measure-of-Well-Being
+
+---
+
+# ✨ Features
+
+✅ Real-time HDI Prediction
+
+- Predicts HDI Score instantly.
+- Classifies development level.
+
+---
+
+✅ Interactive Dashboard
+
+- Live slider controls
+- Instant score updates
+- No page refresh required
+
+---
+
+✅ HDI Visualization
+
+- Color-coded HDI spectrum
+- Progress indicator
+- Official UNDP thresholds
+
+---
+
+✅ Index Breakdown
+
+Displays
+
+- Life Expectancy Index
+- Education Index
+- Income Index
+
+---
+
+✅ Smart Recommendation System
+
+Automatically
+
+- Detects the weakest indicator
+- Suggests the next improvement target
+- Calculates the exact value required to move to the next HDI tier
+
+---
+
+✅ Clean User Interface
+
+- Responsive Design
+- Modern Layout
+- Easy Navigation
+- Lightweight
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+- HTML5
+- CSS3
+- JavaScript (ES6)
+
+## Proposed Backend
+
+- Python
+- Flask / FastAPI
+- Scikit-learn
+- Pandas
+- NumPy
+- Pickle / Joblib
+
+---
+
+# 📂 Project Structure
 
 ```text
-measure-of-well-being/
+A-Comprehensive-Measure-of-Well-Being/
 │
-├── dataset/
-│   └── HDI Dataset
+├── index.html
+├── docs/
+│   ├── Solution_Requirements.pdf
+│   ├── Problem_Solution_Fit.pdf
+│   ├── Proposed_Solution.pdf
+│   ├── Solution_Architecture.pdf
+│   └── Project_Planning.pdf
 │
-├── model/
-│   └── Trained Machine Learning Model
-│
-├── notebook/
-│   └── Model Training Notebook
-│
-├── static/
-│   ├── css/
-│   ├── images/
-│   └── js/
-│
-├── templates/
-│   └── HTML Pages
-│
-├── app.py
-├── requirements.txt
-├── Procfile
-├── runtime.txt
-└── README.md
+├── README.md
+└── assets/
+    └── screenshots/
 ```
 
 ---
 
-## ⚙️ Installation
+# 📊 Input Parameters
 
-### Clone the Repository
+The prediction model requires three inputs:
+
+| Parameter | Description |
+|-----------|-------------|
+| 🌱 Life Expectancy | Average life expectancy at birth (Years) |
+| 🎓 Years of Schooling | Mean & Expected Years of Schooling |
+| 💰 GNI per Capita | Gross National Income (PPP US$) |
+
+---
+
+# 📈 Output
+
+The application generates:
+
+- HDI Score (0–1)
+- Development Category
+- Life Expectancy Index
+- Education Index
+- Income Index
+- Improvement Recommendation
+- Required Target Value
+- HDI Progress Visualization
+
+---
+
+# ⚙️ Methodology
+
+The application follows the **United Nations Development Programme (UNDP)** Human Development Index methodology.
+
+### Step 1
+
+Normalize each indicator using official UNDP minimum and maximum values.
+
+### Step 2
+
+Compute
+
+- Life Expectancy Index
+- Education Index
+- Income Index
+
+### Step 3
+
+Calculate the final HDI score using the **Geometric Mean**.
+
+### Step 4
+
+Classify the score according to UNDP thresholds.
+
+| HDI Score | Category |
+|-----------|----------|
+| ≥ 0.800 | Very High |
+| 0.700 – 0.799 | High |
+| 0.550 – 0.699 | Medium |
+| < 0.550 | Low |
+
+---
+
+# 🔮 Future Enhancements
+
+- Machine Learning based prediction model
+- Historical country-wise HDI analysis
+- Interactive visual dashboards
+- Country comparison module
+- Data export (PDF/CSV)
+- AI-powered recommendations
+- Cloud deployment
+- REST API Integration
+
+---
+
+# 🚀 Installation
+
+## Clone Repository
 
 ```bash
-git clone https://github.com/chilakalapallilohitha23csm-sudo/measure-of-well-being.git
+git clone https://github.com/Haradevsrujan/A-Comprehensive-Measure-of-Well-Being.git
 ```
+
+## Navigate to Project
 
 ```bash
-cd measure-of-well-being
+cd A-Comprehensive-Measure-of-Well-Being
 ```
 
-### Create a Virtual Environment
+## Run Locally
+
+Simply open
+
+```text
+index.html
+```
+
+or start a local server
 
 ```bash
-python -m venv venv
+python -m http.server
 ```
 
-### Activate the Environment
-
-**Windows**
-
-```bash
-venv\Scripts\activate
-```
-
-**Linux/macOS**
-
-```bash
-source venv/bin/activate
-```
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run the Application
-
-```bash
-python app.py
-```
-
-Open your browser and visit:
+Visit
 
 ```
-http://127.0.0.1:5000
+http://localhost:8000
 ```
 
 ---
 
-## 📈 Model Performance
+# 📸 Screenshots
 
-| Metric | Value |
-|---------|-------|
-| Model Type | Regression |
-| R² Score | 0.98+ |
-| Output | HDI Score |
-| Prediction | Human Development Category |
+## 🏠 Home Page
 
----
-
-## 🌎 Human Development Categories
-
-The application predicts the HDI score and classifies it into one of the following categories:
-
-- 🔴 Low Human Development
-- 🟠 Medium Human Development
-- 🟡 High Human Development
-- 🟢 Very High Human Development
-
----
-
-## 🎯 Project Objectives
-
-- Predict the Human Development Index using Machine Learning.
-- Analyze the impact of socio-economic indicators on HDI.
-- Build an interactive web application for real-time prediction.
-- Demonstrate end-to-end Machine Learning deployment.
-- Promote data-driven insights into national development.
-
----
-
-## 📸 Application Preview
-
-<img width="1847" height="901" alt="image" src="https://github.com/user-attachments/assets/d1bbc668-1fe6-4f1e-969c-81c9b54f285c" />
-
+> <img width="1192" height="641" alt="image" src="https://github.com/user-attachments/assets/4e618bd3-78aa-48fc-bce3-fb464cf97506" />
 
 
 ---
 
-## ☁️ Deployment
+## 📊 Prediction Dashboard
 
-The application is deployed on **Render**.
+> <img width="968" height="434" alt="image" src="https://github.com/user-attachments/assets/560f1c84-b26e-4da9-ac7a-a24b3cd229cc" />
 
-🌐 **Live Website:** https://project-apsche.onrender.com/
-
----
-
-## 👩‍💻 Author
-
-**Lohitha Chilakalapalli**
-
-- GitHub: https://github.com/chilakalapallilohitha23csm-sudo
 
 ---
 
-## 🚀 Future Enhancements
+## 💡 Recommendation Result
 
-- 📂 Batch prediction using CSV uploads
-- 📊 Interactive data visualization dashboards
-- 🌍 Country-wise HDI comparison
-- 🤖 Explainable AI using SHAP/LIME
-- 🔗 REST API integration
-- 🐳 Docker support with CI/CD pipeline
+> <img width="478" height="194" alt="image" src="https://github.com/user-attachments/assets/d6a538c6-a6cc-4dc5-93d1-41e0420211eb" />
+
 
 ---
 
-## 📄 License
+## 📈 HDI Visualization
 
-This project is developed for **educational and academic purposes**.
+> <img width="242" height="215" alt="image" src="https://github.com/user-attachments/assets/a87b59f0-b48c-4dc0-bb09-cdb926fe9769" />
+
 
 ---
 
-### ⭐ If you found this project useful, don't forget to **Star ⭐ the repository!**
+# 👨‍💻 Author
+
+### **Lohitha**
+
+Github
+
+https://github.com/chilakalapallilohitha23csm-sudo/measure-of-well-being.git
+
+---
+
+# 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome.
+
+Feel free to fork this repository and submit a pull request.
+
+---
+
+# 📜 License
+
+This project is developed for academic and educational purposes.
+
+---
+
+# ⭐ Support
+
+If you found this project useful,
+
+⭐ **Give this repository a Star!**
+
+It helps others discover the project and motivates future improvements.
+
+---
+
+## 🙌 Acknowledgements
+
+- United Nations Development Programme (UNDP)
+- Human Development Report Methodology
+- Open-source web development community
+
+---
+
+> **A Comprehensive Measure of Well-Being** — Leveraging technology to make Human Development insights more accessible, interactive, and actionable.
