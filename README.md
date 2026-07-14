@@ -173,15 +173,19 @@ The application predicts the HDI score and classifies it into one of the followi
 
 ## 📸 Application Preview
 
-Add screenshots here after uploading them.
+<img width="1847" height="901" alt="image" src="https://github.com/user-attachments/assets/d1bbc668-1fe6-4f1e-969c-81c9b54f285c" />
+
 
 ```
 Home Page
+<img width="1876" height="892" alt="image" src="https://github.com/user-attachments/assets/03ec1f85-924a-465b-a297-63d3b614493f" />
 
 Prediction Form
 
 Prediction Result
 ```
+![Uploading image.png…]()
+
 
 ---
 
