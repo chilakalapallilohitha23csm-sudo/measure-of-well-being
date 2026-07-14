@@ -281,7 +281,7 @@ http://localhost:8000
 
 # 👨‍💻 Author
 
-### **Lohitha**
+### **Lohitha Chilakalapalli**
 
 Github
 
